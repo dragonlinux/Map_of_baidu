@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+       
+      <Button
+        android:id="@+id/clear"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="2dip"
+		android:layout_marginRight="2dip"
+		android:layout_marginTop="2dip"
+		android:layout_marginBottom="2dip"
+        android:background="@drawable/button_style"
+        android:onClick="clearOverlay"
+        android:padding="10dip"
+        android:text="清除(clear)" />
+      <Button
+        android:id="@+id/resert"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="2dip"
+		android:layout_marginRight="2dip"
+		android:layout_marginTop="2dip"
+		android:layout_marginBottom="2dip"
+        android:background="@drawable/button_style"
+        android:onClick="resetOverlay"
+        android:text="重置(reset)" />
+      
+        
+    </LinearLayout>
+    
+    <com.baidu.mapapi.map.MapView android:id="@+id/bmapView"
+	    android:layout_width="fill_parent" android:layout_height="fill_parent" 
+	    android:clickable="true"     
+	/>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    >
+	    
+    <TextView
+        android:id="@+id/popleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_side"
+         android:gravity="center"
+        android:textStyle="bold"
+         android:textColor="#3814ed"
+        android:text="更新位置"
+        android:textSize="12sp" />
+
+   
+     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:id="@+id/popinfo"
+	    >
+	    
+    <TextView
+        android:id="@+id/textcache"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_middle"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+    
+     <TextView
+        android:id="@+id/popdown"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_down"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+    
+    
+    </LinearLayout>
+
+     
+    <TextView
+        android:id="@+id/popright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_side"
+        android:textColor="#3814ed"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="更新marker"
+        android:textSize="12sp" />
+
+</LinearLayout>

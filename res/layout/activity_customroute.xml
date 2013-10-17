@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<TextView
+	    android:id="@+id/textView1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="自设路线功能演示开发者如何自已设定一条路线数据，包括如何设定起点、终点和中间的关键节点。以下展示如何在北京地图上绘制一条形如北斗七星的路线" />
+	<com.baidu.mapapi.map.MapView android:id="@+id/bmapView"
+	    android:layout_width="fill_parent" android:layout_height="fill_parent" 
+	    android:clickable="true"     
+	/>
+</LinearLayout>

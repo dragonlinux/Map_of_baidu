@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <baidumapsdk.demo.MyLocationMapView android:id="@+id/bmapView"
+	    android:layout_width="fill_parent" android:layout_height="fill_parent" 
+	    android:clickable="true"     
+	/>
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:minWidth="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="#D000"
+        android:orientation="vertical"
+        android:padding="2dp" 
+        android:layout_marginTop="80dip">
+
+       <RadioGroup android:id="@+id/radioGroup" android:contentDescription="定位icon" android:layout_width="wrap_content" android:layout_height="wrap_content">
+ 			<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/defaulticon" android:text="默认图标" android:checked="true"></RadioButton>
+			<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/customicon" android:text="自定义图标"></RadioButton>    
+		</RadioGroup>
+
+    </LinearLayout>
+
+     <Button
+         android:id="@+id/button1"
+         android:layout_width="40dp"
+         android:layout_height="40dp"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginRight="10dp"
+         android:layout_marginTop="10dip"
+         android:text="定位" 
+         android:background="@drawable/button_style"
+         android:textColor="#FF000000" />
+
+</RelativeLayout>

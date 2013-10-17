@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip">
+    
+    <Button
+        android:id="@+id/zoombutton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/button_style"
+        android:text="缩放" />
+
+    <EditText
+        android:id="@+id/zoomlevel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="10" />
+
+    <Button
+        android:id="@+id/rotatebutton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/button_style"
+        android:text="旋转" />
+
+    <EditText
+        android:id="@+id/rotateangle"
+    	android:text="90"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="1"
+        />
+
+    <Button
+        android:id="@+id/overlookbutton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    	android:layout_weight="1"
+        android:background="@drawable/button_style"
+        android:text="俯视" />
+
+    <EditText
+        android:id="@+id/overlookangle"
+    	android:text="-30"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="1"
+        />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/state"
+    	android:text="点击、长按、双击地图以获取经纬度和地图状态"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+        />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+  <com.baidu.mapapi.map.MapView android:id="@+id/bmapView"
+	    android:layout_width="fill_parent" android:layout_height="fill_parent" 
+	    android:clickable="true"     
+	/>
+    <Button
+        android:id="@+id/savescreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/button_style"
+        android:text="截图" />
+
+</RelativeLayout>
+
+  </LinearLayout>
+  

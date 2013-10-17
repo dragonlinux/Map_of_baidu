@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+
+    <string name="app_name">百度地图SDK DEMO</string>
+    <string name="demo_name_basemap">基本地图功能</string>
+    <string name="demo_title_basemap">基本地图功能--BaseMapDemo</string>
+    <string name="demo_desc_basemap">创建一张百度地图并管理地图的生命周期</string>
+    <string name="demo_name_layers">图层展示</string>
+    <string name="demo_title_layers">图层展示--LayersDemo</string>
+    <string name="demo_desc_layers">展示普通图、卫星图及交通流量图</string>
+    <string name="demo_name_control">地图操作功能</string>
+    <string name="demo_desc_control">介绍地图基本控制方法</string>
+    <string name="demo_title_control">地图操作功能--MapControlDemo</string>
+    <string name="demo_name_ui">UI控制功能</string>
+    <string name="demo_title_ui">UI控制功能--UISettingsDemo</string>
+    <string name="demo_desc_ui">介绍开关手势功能和显示隐藏UI控件</string>
+    <string name="demo_name_location">定位图层展示</string>
+    <string name="demo_title_location">定位图层展示--LocationOverlayDemo</string>
+    <string name="demo_desc_location">介绍定位图层的基本用法</string>
+    <string name="demo_name_geometry">自定义绘制功能</string>
+    <string name="demo_title_geometry">自定义绘制功能--GeometryDemo</string>
+    <string name="demo_desc_geometry">介绍自定义绘制点、线、多边形、圆等几何图形和文字</string>
+    <string name="demo_name_overlay">覆盖物功能</string>
+    <string name="demo_title_overlay">覆盖物功能--OverlayDemo</string>
+    <string name="demo_desc_overlay">介绍添加覆盖物并响应点击功能和弹出pop功能</string>
+    <string name="demo_name_poi">POI搜索功能</string>
+    <string name="demo_title_poi">POI搜索功能--POISearchDemo</string>
+    <string name="demo_desc_poi">介绍关键词查询、suggestion查询和查看餐饮类Place详情页功能</string>
+    <string name="demo_name_route">路径规划功能</string>
+    <string name="demo_title_route">路径规划功能--RoutePlanDemo</string>
+    <string name="demo_desc_route">介绍公交、驾车和步行三种线路规划方法和自设路线方法</string>
+    <string name="demo_name_geocode">地理编码功能</string>
+    <string name="demo_title_geocode">地理编码功能--GeoCodeDemo</string>
+    <string name="demo_desc_geocode">介绍地址信息与坐标之间的相互转换</string>
+    <string name="demo_name_bus">公交线路查询功能</string>
+    <string name="demo_title_bus">公交线路查询功能--BusLineDemo</string>
+    <string name="demo_desc_bus">介绍查询公交线路功能</string>
+    <string name="demo_name_offline">离线地图功能</string>
+    <string name="demo_title_offline">离线地图功能--OfflineDemo</string>
+    <string name="demo_desc_offline">介绍如何下载和使用离线地图</string>
+    <string name="demo_name_navi">导航功能</string>
+    <string name="demo_title_navi">导航功能--NaviDemo</string>
+    <string name="demo_desc_navi">介绍如何调起百度地图Android版（V5.0及以上版本）导航功能</string>
+    <string name="demo_name_cloud">LBS.云检索功能</string>
+    <string name="demo_title_cloud">LBS.云检索功能--CloudSearchDemo</string>
+    <string name="demo_desc_cloud">介绍如何使用LBS.云检索用户自有数据</string>
+    <string name="key_error">"请在  DemoApplication.java文件输入正确的授权Key！\r\n申请地址：http://dev.baidu.com/wiki/static/imap/key/"</string>
+    <string name="navi_tip">本功能为调起百度地图Android客户端（V5.0及以上版本）的导航功能，用户必须已安装百度地图客户端，如果没有安装则提示用户下载安装百度地图客户端。</string>
+    <string name="title_activity_cloud_search_demo">云检索使用介绍</string>
+    <string name="cloud_search_tips"> \t\tLBS.云是百度地图针对LBS开发者推出的平台级服务。结合已有的地图API和SDK服务。通过开放服务端存储和计算能力,提供海量位置数据存储、检索、展示一体化解决方案。\n\n
+          \t\t该服务对开发者免费开放。测试demo里写入了测试的ak。开发者可以使用测试ak查看 LBS.云检索的效果。如果开发者要使用自己的数据，请在申请ak后替换demo中的ak。\n\n
+          \t\t如有任何关于LBS.云服务的问题,诸如如何申请ak、如何存储和检索数据等，请访问百度地图官方“LBS开放平台”。地址：http://lbsyun.baidu.com/  \n</string>
+    <string name="demo_title_share">短串分享功能 --ShareDemo</string>
+    <string name="demo_name_share">短串分享</string>
+    <string name="demo_desc_share">将POI点、反Geo点生成短链接以分享给好友</string>
+    <string name="share_tip">\t\t短串分享是指，用户搜索查询后得到的每一个地理位置结果将会对应一条短串（短链接），用户可以通过短信、邮件或第三方分享组件（如微博、微信等）把短串分享给其他用户从而实现地理位置信息的分享。当其他用户收到分享的短串后，点击短串即可打开手机上的百度地图客户端或者手机浏览器进行查看。\n\n
+                \t\t例如，用户搜索“百度大厦”后通过短信使用短串分享功能把该地点分享给好友，好友点击短信中的短串“http://j.map.baidu.com/XLCrk”后可以调起百度地图客户端或者手机浏览器查看“百度大厦”的地理位置信息。\n\n
+                \t\t目前短串分享功能暂时开放了“POI搜索结果分享”和“反向地理编码结果分享”，日后会开放更多的功能，欢迎广大开发者使用短串分享功能。
+     </string>
+
+</resources>

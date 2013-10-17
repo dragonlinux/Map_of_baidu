@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip">
+    
+   <TextView
+		android:id="@+id/cityid"
+	    android:layout_width="fill_parent" 
+	    android:layout_weight="1"
+	    android:layout_height="wrap_content" 
+	    android:text="131" />
+   <!-- 隐藏输入法用 --> 
+   <LinearLayout
+       android:focusable="true"
+       android:focusableInTouchMode="true"
+       android:layout_width="0px"
+       android:layout_height="0px"/>
+   
+	<EditText
+	    android:id="@+id/city"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:text="北京" />
+	
+	<Button android:id="@+id/search"
+    	android:text="搜索"
+    	android:layout_width="fill_parent" 
+    	 android:layout_weight="1"
+	    android:onClick="search"
+	    android:background="@drawable/button_style"
+    	android:layout_height="wrap_content"  />
+	
+	<Button android:id="@+id/scan"
+    	android:text="导入"
+    	android:layout_width="fill_parent" 
+    	 android:layout_weight="1"
+	    android:onClick="importFromSDCard"
+	    android:background="@drawable/button_style"
+    	android:layout_height="wrap_content"  />
+   </LinearLayout> 
+   
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip">
+	<TextView
+		android:id="@+id/state"
+	    android:layout_width="fill_parent" 
+	    android:layout_weight="1"
+	    android:layout_height="wrap_content" 
+	    android:text="已下载:--" />
+    <Button android:id="@+id/start"
+    	android:text="开始"
+    	android:layout_width="fill_parent" 
+	    android:layout_weight="1"
+	    android:onClick="start"
+	    android:background="@drawable/button_style"
+    	android:layout_height="wrap_content"  />
+	<Button android:text="停止" 
+		android:id="@+id/stop" 
+		android:layout_width="fill_parent" 
+	    android:layout_weight="1"
+	    android:onClick="stop"
+	    android:background="@drawable/button_style"
+		android:layout_height="wrap_content"  />
+	<Button android:text="删除" 
+		android:id="@+id/del" 
+		android:layout_width="fill_parent" 
+	    android:layout_weight="1"
+	    android:onClick="remove"
+	    android:background="@drawable/button_style"
+		android:layout_height="wrap_content"  />
+</LinearLayout>
+
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id ="@+id/city_list"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+   android:orientation="horizontal" >
+	
+     <Button android:text="城市列表" 
+		android:id="@+id/clButton" 
+		android:layout_width="fill_parent" 
+	    android:layout_weight="1"
+	    android:onClick="clickCityListButton"
+	    android:background="@drawable/button_style"
+		android:layout_height="wrap_content"  />
+	<Button android:text="下载管理" 
+		android:id="@+id/localButton" 
+		android:layout_width="fill_parent" 
+	    android:layout_weight="1"
+	    android:onClick="clickLocalMapListButton"
+	    android:background="@drawable/button_style"
+		android:layout_height="wrap_content"  />
+	
+</LinearLayout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id ="@+id/citylist_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="热门城市"
+   />
+
+   <ListView
+       android:id="@+id/hotcitylist"
+       android:layout_width="fill_parent"
+       android:layout_height="200dip" />
+   
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="全国"
+    />
+
+    <ListView
+        android:id="@+id/allcitylist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id ="@+id/localmap_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="已下载城市 "
+   />
+   <ListView android:layout_width="fill_parent"   
+       android:layout_height="wrap_content"   
+       android:id="@+id/localmaplist"  
+    />   
+
+</LinearLayout>
+
+</LinearLayout>

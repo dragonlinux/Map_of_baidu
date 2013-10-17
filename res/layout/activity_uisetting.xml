@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip">
+    
+    <CheckBox
+        android:id="@+id/zoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:checked="true"
+        android:onClick="setZoomEnable"
+        android:text="缩放" />
+    <CheckBox
+        android:id="@+id/scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:checked="true"
+        android:onClick="setScrollEnable"
+        android:text="平移" />
+    <CheckBox
+        android:id="@+id/doubleClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:checked="true"
+        android:onClick="setDoubleClickEnable"
+        android:text="双击放大" />
+  </LinearLayout>
+  
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip">
+    
+    <CheckBox
+        android:id="@+id/rotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:checked="true"
+        android:onClick="setRotateEnable"
+        android:text="旋转" />
+    <CheckBox
+        android:id="@+id/overlook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:checked="true"
+        android:onClick="setOverlookEnable"
+        android:text="俯视" />
+    <CheckBox
+        android:id="@+id/zoomControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:checked="false"
+        android:onClick="setBuiltInZoomControllEnable"
+        android:text="缩放控件" />
+  </LinearLayout>
+  
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip">
+   
+     <TextView 
+         android:layout_width="wrap_content"  
+         android:layout_height="wrap_content"  
+         android:layout_weight="1"
+         android:paddingTop="10dip"
+         android:text="指南针位置"
+     />
+     <RadioGroup   
+        android:id="@+id/RadioGroup"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_weight="1"
+        android:orientation="horizontal"  
+        android:text="指南针位置" 
+     >   
+       <RadioButton   
+           android:id="@+id/lefttop"  
+           android:layout_width="wrap_content"  
+           android:layout_height="wrap_content"  
+           android:onClick="setCompassLocation"
+           android:checked="true"
+           android:text="左上角"  
+        />   
+       <RadioButton   
+           android:id="@+id/righttop"  
+           android:layout_width="wrap_content"  
+           android:layout_height="wrap_content"  
+           android:onClick="setCompassLocation"
+           android:text="右上角"  
+        />   
+    </RadioGroup>
+    
+  </LinearLayout>
+    
+  
+    <com.baidu.mapapi.map.MapView android:id="@+id/bmapView"
+	    android:layout_width="fill_parent" android:layout_height="wrap_content" 
+	    android:clickable="true"     
+	/>
+    
+</LinearLayout>
